@@ -29,13 +29,13 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       {/* <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex"> */}
-      <div className="marquee fadeout-horizontal" style={{ "--num-items": 9 }}>
+      <div className="marquee fadeout-horizontal" style={{ "--num-items": 9 } as React.CSSProperties}>
         <div className="marquee-track">
           {logos.map((logo, index) => (
             <div
               key={index}
               className="marquee-item"
-              style={{ "--item-position": index }}
+              style={{ "--item-position": index } as React.CSSProperties}
             >
               {logo}
             </div>
