@@ -15,15 +15,15 @@ import "./page.css";
 
 export default function Home() {
   const logos = [
-    <AstroLogo />,
-    <JSLogo />,
-    <NextjsLogo />,
-    <ReactLogo />,
-    <RemixLogo />,
-    <SvelteLogo />,
-    <TSLogo />,
-    <TailwindLogo />,
-    <VueLogo />,
+    <AstroLogo key="AstroLogo" />,
+    <JSLogo key="JSLogo" />,
+    <NextjsLogo key="NextjsLogo" />,
+    <ReactLogo key="ReactLogo" />,
+    <RemixLogo key="RemixLogo" />,
+    <SvelteLogo key="SvelteLogo" />,
+    <TSLogo key="TSLogo" />,
+    <TailwindLogo key="TailwindLogo" />,
+    <VueLogo key="VueLogo" />,
   ];
 
   return (
