@@ -7,6 +7,15 @@ export default function StickyNavExample() {
   return (
     <div className="h-[400vh] bg-gray-700">
       <Nav />
+      <section className="h-1/3">
+        <h2>Section 1</h2>
+      </section>
+      <section className="h-1/3">
+        <h2>Section 2</h2>
+      </section>
+      <section className="h-1/3">
+        <h2>Section 3</h2>
+      </section>
     </div>
   );
 }
