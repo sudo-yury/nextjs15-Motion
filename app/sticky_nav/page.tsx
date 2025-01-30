@@ -5,17 +5,22 @@ import { useRef, useState } from "react";
 
 export default function StickyNavExample() {
   return (
-    <div className="h-[400vh] bg-gray-700">
-      <Nav />
-      <section className="h-1/3">
-        <h2>Section 1</h2>
-      </section>
-      <section className="h-1/3">
-        <h2>Section 2</h2>
-      </section>
-      <section className="h-1/3">
-        <h2>Section 3</h2>
-      </section>
+    <div className="flex justify-center w-full">
+      <div className="h-[300vh] w-full md:w-2/3 xlg:w-1/2 bg-gray-700">
+        <Nav />
+        <section className="h-32">
+          <h2> </h2>
+        </section>
+        <section className="h-1/5">
+          <h2>Section 1</h2>
+        </section>
+        <section className="h-1/5">
+          <h2>Section 2</h2>
+        </section>
+        <section className="h-1/5">
+          <h2>Section 3</h2>
+        </section>
+      </div>
     </div>
   );
 }
@@ -41,14 +46,17 @@ const Nav = () => {
       onFocusCapture={() => setIsHidden(false)}
       variants={{
         hidden: {
+          x: "-50%",
           y: "-90%",
         },
         visible: {
+          x: "-50%",
           y: "0%",
         },
       }}
+      initial={{ x: "-50%" }}
       transition={{ duration: 0.2 }}
-      className="fixed top-0 z-10 flex w-full justify-center pt-3"
+      className="fixed left-1/2 top-0 z-10  pt-3"
     >
       <nav className="flex justify-between gap-3 rounded-3xl bg-white p-5 *:rounded-xl *:border *:border-gray-200 *:px-7 *:py-2 *:transition-colors *:duration-300 hover:*:bg-gray-200 focus-visible:*:bg-gray-200">
         <a href="#" className="bg-gray-200">
