@@ -1,9 +1,11 @@
+"use client";
+
 import { motion, useScroll, useMotionValueEvent } from "motion/react";
 import { useRef, useState } from "react";
 
 export default function StickyNavExample() {
   return (
-    <div>
+    <div className="h-[400vh] bg-gray-700">
       <Nav />
     </div>
   );
